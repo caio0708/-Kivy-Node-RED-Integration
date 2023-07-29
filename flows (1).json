@@ -1,0 +1,92 @@
+[
+    {
+        "id": "ee242d7677608828",
+        "type": "tab",
+        "label": "Flow 3",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "79fc97a97fb54499",
+        "type": "debug",
+        "z": "ee242d7677608828",
+        "name": "debug 5",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 460,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "db4195b6cf832221",
+        "type": "http in",
+        "z": "ee242d7677608828",
+        "name": "",
+        "url": "/mensagem",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 250,
+        "y": 220,
+        "wires": [
+            [
+                "79fc97a97fb54499",
+                "7704a6d2ccd9dad4",
+                "fc708a1d4d560685"
+            ]
+        ]
+    },
+    {
+        "id": "7704a6d2ccd9dad4",
+        "type": "http response",
+        "z": "ee242d7677608828",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 450,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "fc708a1d4d560685",
+        "type": "ui_text",
+        "z": "ee242d7677608828",
+        "group": "b7a141624ed1ed5c",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "x": 450,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "b7a141624ed1ed5c",
+        "type": "ui_group",
+        "name": "Kivy communication",
+        "tab": "a1d09f6cc34781df",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "a1d09f6cc34781df",
+        "type": "ui_tab",
+        "name": "Kivy",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    }
+]
