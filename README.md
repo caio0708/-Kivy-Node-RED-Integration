@@ -13,7 +13,7 @@ Este projeto tem como objetivo demonstrar como integrar o framework Kivy com o N
 1. Clone este repositório em seu ambiente local.
 2. Certifique-se de ter o Kivy e a biblioteca requests instalados (pip install kivy requests).
 3. Execute o aplicativo Kivy usando o arquivo main.py.
-4. Digite a mensagem desejada na interface gráfica e clique no botão "Enviar".
+4. Edite a mensagem presente no código e clique no botão "Enviar mensagem para o Node-RED".
 5. O aplicativo enviará a mensagem para o Node-RED usando uma requisição HTTP POST.
 6. Confira o console do Node-RED para ver a mensagem recebida e processada.
 
